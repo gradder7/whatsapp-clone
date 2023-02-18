@@ -6,8 +6,11 @@ import AttachFileIcon from "@mui/icons-material/AttachFile";
 import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
 import MicNoneIcon from "@mui/icons-material/MicNone";
 import "../css/chat.css";
+import { useParams } from "react-router-dom";
 
 function Chat() {
+  const {roomId} =useParams();
+
   return (
     <div className="chat">
       <div className="chat__header">
